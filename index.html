@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Work 4</title>
+
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <style>
+        ul {
+            margin: 0;
+            padding: 0;
+        }
+        .tab {
+            height: 30px;
+            line-height: 20px;
+            list-style: none;
+        }
+
+        .tab li {
+            float: left;
+            position: relative;
+            display: inline;
+            color: black;
+            background: steelblue;
+            border: 1px solid black;
+            border-bottom: 1px solid mediumvioletred;
+            margin: 2px;
+            padding: 2px;
+            cursor: pointer;
+        }
+
+        .content {
+            display: none;
+            float: left;
+            position: relative;
+            background-color: mediumvioletred;
+            height: 100px;
+            width: 350px;
+            margin-top: -3px;
+            border: 1px solid black;
+            /*border-left: 1px solid black;*/
+            /*border-bottom: 1px solid black;*/
+            /*border-right: 1px solid black;*/
+        }
+
+        .active_li {
+            background: mediumvioletred !important;
+            z-index: 100;
+        }
+
+        .active_div {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table">
+        <ul class="tab">
+            <li class="active_li" id="v1">Вкладка 1</li>
+            <li id="v2">Вкладка 2</li>
+            <li id="v3">Вкладка 3</li>
+            <li id="v4">Вкладка 4</li>
+        </ul>
+
+        <div class="content active_div" id="div_v1">Текст первой вкладки</div>
+        <div class="content" id="div_v2">Текст второй вкладки</div>
+        <div class="content" id="div_v3">Текст третьей вкладки</div>
+        <div class="content" id="div_v4">Текст четвертой вкладки</div>
+    </div>
+
+</body>
+</html>
